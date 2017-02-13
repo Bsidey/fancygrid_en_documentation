@@ -1,0 +1,106 @@
+DocsAPI
+Getting Started
+Installation grid
+Your first grid
+Installation form
+Your first form
+AngularJS
+Angular2
+Component
+Grid Concepts
+Form Concepts
+Design and Style
+Miscellaneous
+Installation
+
+FancyGrid is plugin-free library, it does not depend on other libraries, but it integrates with jQuery, AngularJS, Sparklines and HighCharts chart libraries.
+In this document you will learn how to include FancyGrid in your site.
+
+
+Include FancyGrid
+Include files from code.fancygrid.com
+Include the JavaScript files in the <head> section of your web page as shown below.
+
+<link href="http://code.fancygrid.com/fancy.min.css" rel="stylesheet">
+<script src="http://code.fancygrid.com/fancy.min.js"></script>
+
+Include files from CDN
+Include the JavaScript files in the <head> section of your web page as shown below.
+
+<link href="http://cdn.fancygrid.com/fancy.min.css" rel="stylesheet">
+<script src="http://cdn.fancygrid.com/fancy.min.js"></script>
+<script>
+Fancy.MODULESDIR="http://cdn.fancygrid.com/modules/";
+</script>
+
+Alternatively, you can load the files from your own domain
+Download Latest Build and include files to your page.
+
+<link href="/fancygrid/fancy.min.css" rel="stylesheet">
+<script src="/fancygrid/fancy.min.js"></script>
+
+FancyGrid has an intelligent modules system that
+auto detects and loads all the needed modules by itself. 
+If you include files from own domain then set the modules directory url within a script tag.
+
+<script>
+Fancy.MODULESDIR = '/fancygrid/modules/';
+</script>
+
+By default, it is set from the code site:
+
+Fancy.MODULESDIR = 'https://code.fancygrid.com/modules/';
+
+Full built
+Another way of including FancyGrid is to use the full built files.
+In this case the modules system will not be loaded. The trade off is that the full size files are larger.
+
+<link href="/fancygrid/fancy.min.css" rel="stylesheet">
+<script src="/fancygrid/fancy.full.min.js"></script>
+
+Bower
+Run the following command to start your download.
+bower install fancygrid
+
+Integration
+
+JQuery
+FancyGrid is integrated with jQuery.
+If jQuery is included on the page then FancyGrid will switch to use it's API.
+
+Include jQuery on the page within a script tag.
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+For Chart samples
+To use chart integration, include HighCharts.
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+To use sparklines, download and include the sparkline library (jQuery library).
+http://omnipotent.net/jquery.sparkline/
+
+Get Started
+Your page will look similar to this:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Your Title here</title>
+        
+        <link href="http://code.fancygrid.com/fancy.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">        
+        
+        <!-- <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script> -->
+        <script src="http://code.fancygrid.com/fancy.min.js"></script>
+                
+    </head>
+    <body>
+        <div class="container"></div>
+    </body>
+</html>
+
+You are now ready to use FancyGrid, see Your first grid to get started.
